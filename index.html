@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Conversor de Temperatura</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <h1>Conversor de Temperatura</h1>
+
+  <form id="form">
+    <input type="number" id="valor" placeholder="Temperatura" required />
+
+    <select id="de">
+      <option value="celsius">Celsius</option>
+      <option value="fahrenheit">Fahrenheit</option>
+      <option value="kelvin">Kelvin</option>
+    </select>
+
+    <span>→</span>
+
+    <select id="para">
+      <option value="celsius">Celsius</option>
+      <option value="fahrenheit">Fahrenheit</option>
+      <option value="kelvin">Kelvin</option>
+    </select>
+
+    <button type="submit">Converter</button>
+  </form>
+
+  <p>Resultado: <span id="resultado">0</span></p>
+
+  <button id="rodarTestesUnitBtn">Rodar Testes Unitários</button>
+  <button id="rodarTestesComponentBtn">Rodar Testes de Componente</button>
+
+  <div id="testes-resultados"></div>
+
+  <script src="src/conversor.js"></script>
+  <script src="src/rodarTestes.js"></script>
+  <script src="tests/unitario.test.js"></script>
+  <script src="tests/component.test.js"></script>
+</body>
+
+</html>
